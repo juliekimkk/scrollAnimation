@@ -1,0 +1,137 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: black;
+    color: #FFE5DB;
+    width:100%;
+}
+
+.container {
+    height:2000px;
+}
+
+.info {
+    position:fixed;
+    z-index:1100;
+    right:30px;
+   
+}
+
+.text-inner{
+    width:100%;
+    font-size:30px;
+    height:1000px;
+    position:relative;
+    text-align: center;
+    z-index:1;
+}
+
+.text1 {
+    width:200px;
+    top: 60%;
+
+}
+
+.text2 {
+    width:100%;
+    font-size:80px;
+    font-weight: 600;
+    text-align: center;
+    top:20%;
+    position:relative;
+}
+
+.text3 {
+    width:100%;
+    font-size:80px;
+    font-weight: 600;
+    top:35%;
+    position:relative;
+    text-decoration: none;
+    color:#FFE5DB;
+    height:100px;
+    z-index:1;
+}
+
+.text3 {
+    width:200px;
+    height:100px;
+    text-align: center;
+    position:relative;
+    text-decoration: none;
+    color: white;
+    display:inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+    top:35%;
+}
+
+/*2. section*/
+
+.emphasizeText-inner { 
+    position:relative;
+    width: 100%; 
+    top: 300px; 
+}
+
+.quizImg1 img{
+    width:40%;
+    height:500px;
+    position: fixed;
+    left:30%;
+}
+
+.emphasizeText1 {
+    position: fixed;
+    left:20%;
+    text-align: center;
+}
+
+.emphasizeText2{
+    position: fixed;
+
+    left:20%;
+    margin-top:550px;
+    text-align: center;
+}
+
+.empty{
+    width:100%;
+    height:2000px;
+}
+
+/*3. site*/
+.site1 img{
+    position:fixed;
+    top:20%;
+    right:20%;
+}
+
+.site1-frame{
+    position: fixed; 
+    top: 28%; 
+    left: 32.1%;
+    width:55.4%;
+    height: 68.5%; 
+    background-color: transparent;
+	border-radius: 0px 0px 5px 5px;
+	overflow: hidden;
+}
+
+.site1-frame img {
+	width: 100%;
+    position:relative;
+}
+
+.message{
+    font-size:50px;
+    margin:0 auto;
+}
+.messageHover{
+    font-size: 50px;
+}

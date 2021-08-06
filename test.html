@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/test.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&amp;subset=korean" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="info">
+            <span class="scroll_top">0</span>
+        </div>
+        <div class="text-inner">
+            <div class="text1" 
+                data-smooth-scrolling="on"
+                data-start= "opacity:0; transform: translateX(-4%) translateY(100px);" 
+                data-100="opacity:1; transform: translateX(-4%) translateY(200px);"
+                data-200="opacity:0.5; transform: translateX(-4%) translateY(600px);"
+                data-300="opacity:0; transform: translateX(-4%) translateY(100px);">
+               
+            </div>
+            <div class="text2" data-aos="fade-down" data-aos-duration="3000">
+                GENESIS Retail CX Process
+            </div>
+
+            <div class="text3" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
+            <a class="text3" href="#" onclick="movePage()">
+                NEXT
+            </a>
+            </div>
+
+        <div class="emphasizeText-inner">
+            <div class="emphasizeText1"
+            data-900="opacity:0; transform:scale(3); top:10%"
+            data-1100="opacity:0.5; transform:scale(2); top:10%"
+            data-1300="opacity:1; transform:scale(1); top:10%"
+            data-1600="opacity:1; transform:scale(1); top:10%"
+            data-2100="opacity:1; transform:scale(1); top:-80%;"
+            >
+            <h2>“제네시스만의 새로운 고객경험”</h2><br/>우리는 뛰어난 제품력과 차별점된 디자인으로 글로벌 럭셔리 시장에서 인정받았습니다.
+
+            </div>
+            <div class="quizImg1">
+                <img 
+                data-600="opacity:0; transform:scale(2.3); top:50%;"
+                data-700="opacity:0.5; transform:scale(2.3); top:50%;"
+                data-800="opacity:0.5; transform:scale(1.9); top:30%;"
+                data-900="opacity:1; transform:scale(1); top:30%;"
+                data-1600="opacity:1; transform:scale(1); top:30%;"
+                data-2100="opacity:1; transform:scale(1); top:-80%;"
+
+                src="./assets/img/genesis.PNG">
+            </div>
+
+            <div class="emphasizeText2"
+            data-900="opacity:0; transform:scale(3); top:30%"
+            data-1100="opacity:0.5; transform:scale(2); top:30%"
+            data-1300="opacity:1; transform:scale(1); top:30%"
+            data-1600="opacity:1; transform:scale(1); top:30%"
+            data-2100="opacity:1; transform:scale(1); top:-80%;"
+                >
+               <h2>“한국적 환대의 가치관”</h2><br/>성장 모멘텀과 지속적인 발전을 위해서는 리테일 고객 경험도 혁신하고 차별점되어야 합니다.
+            </div>
+        </div>
+
+        <div class="empty"></div>
+
+        <div class="site1">
+            <img src="./assets/img/webstandard-.png"
+            class="site1-img" 
+            data-2000="top: -50%; opacity:0;" 
+            data-2400="top: 10%; opacity:1; transform: translateY(0%);"
+            data-5400="top: 10%; opacity:1;"
+            data-6000="top:-80%; opacity:0; translateY(-51%);" >
+           
+            <div class="site1-frame">
+                <img src="./assets/img/webstandard-site.png"
+                data-2000="top: -50%; opacity:0;"
+                data-2400=" opacity:1;  transform: translateY(0%);" 
+                data-6000="top:-80%; opacity:0; transform: translateY(-51%);" >
+            </div>     
+        </div>
+
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="endText"></div>
+        <div class="message">마우스를 올려주세요</div>
+        <div class="messageHover">메롱</div>
+
+    </div>
+</body>
+
+
+<script src="assets/js/jquery-1.12.4.js"></script>
+<script src="assets/js/jquery-ui-1.12.1.min.js"></script>
+<script src="assets/js/skrollr.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    var s = skrollr.init(); //초기화 
+    
+    
+    $(window).scroll(function(){
+      var wScroll = $(this).scrollTop();  //자기 자신을 표현할 땐, this 를 쓰자
+      wScroll = parseInt(wScroll);
+      $(".scroll_top").text(wScroll);
+    });
+
+    AOS.init();
+
+
+    //hover시 보이는 메세지 
+    $(window).load(function(){
+        $(function(){
+            $('.messageHover').hide();
+            $('.message').hover(function(){
+                $('.messageHover').fadeIn();
+            }, function(){
+                $('.messageHover').fadeOut();
+            });
+        });
+    });
+</script>
+</html>
